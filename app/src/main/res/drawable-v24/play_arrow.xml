@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:alpha="0.6"
+    android:height="1dp"
+    android:viewportHeight="90.0"
+    android:viewportWidth="90.0"
+    android:width="1dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#E3E3E3" android:pathData="M41,35v14l11,-7z"/>
+</vector>
+<!--    Vector图像可以自动进行适配，不需要通过分辨率来设置不同的图片，一套解决问题
+    Vector图像可以大幅减少图像的体积，同样一张图，用Vector来实现，可能只有PNG的几十分之一
+    使用简单，UI设计师只用导出SVG格式或PSD格式，从而使用as直接转换成Vector图像。
+    功能强大，不用写很多代码就可以实现非常复杂的动画
+
+Canvas绘图的属性基本类似
+android:viewportHeight \ android:viewportWidth:定义图像被划分的比例大小，声明的画布大小
+android:pathData="M8,5v14l11,-7z"，大写M表示绝对值，使用小写m时;
+表示相对于前一点的值，如果前一点没有指定，则使用(0,0)
+M...是x轴，正方向为竖直向右，6v是y轴坐标，正方向竖直向下，...l小了角向右上，大了向右下，
+...是从左边到右边的距离，z小角会向右上，大了会向右下-->
+
+

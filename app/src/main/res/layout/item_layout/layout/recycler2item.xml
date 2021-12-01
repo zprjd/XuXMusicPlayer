@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/recycler2img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/recycler2.5img"
+        android:layout_width="70dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/gtitle"
+        android:backgroundTint="@color/purple_200"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler2img"
+        app:layout_constraintLeft_toLeftOf="@id/recycler2img"
+        app:layout_constraintTop_toTopOf="@+id/recycler2img"
+        tools:ignore="MissingConstraints" >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/recycler2Lillayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/recycler2.5text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler2Lillayout"
+                app:layout_constraintEnd_toEndOf="@+id/recycler2Lillayout"
+                app:layout_constraintStart_toStartOf="@+id/recycler2Lillayout"
+                app:layout_constraintTop_toTopOf="@+id/recycler2Lillayout"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="2dp"
+                android:text="528.9万"
+                android:textSize="10sp"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/play1"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/recycler2Lillayout"
+                app:layout_constraintEnd_toStartOf="@+id/recycler2.5text"
+                app:layout_constraintTop_toTopOf="@+id/recycler2Lillayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/recycler2text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/recycler2.5img"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/dialog_bottomLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/m1111111111111"
+        android:text="In My Life"
+        android:textSize="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:id="@+id/MusicSeekbar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/m1111111111111"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
